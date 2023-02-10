@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericFindMax", "GenericFindMax\GenericFindMax.csproj", "{5FCB35ED-2449-444B-8775-D2B2CD83B6BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericFindMaxTestCase", "GenericFindMaxTestCase\GenericFindMaxTestCase.csproj", "{5499B495-244E-4190-935B-726FA8B67E98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5FCB35ED-2449-444B-8775-D2B2CD83B6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FCB35ED-2449-444B-8775-D2B2CD83B6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FCB35ED-2449-444B-8775-D2B2CD83B6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5499B495-244E-4190-935B-726FA8B67E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5499B495-244E-4190-935B-726FA8B67E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5499B495-244E-4190-935B-726FA8B67E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5499B495-244E-4190-935B-726FA8B67E98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
