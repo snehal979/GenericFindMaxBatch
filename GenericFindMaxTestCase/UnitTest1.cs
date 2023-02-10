@@ -65,6 +65,14 @@ namespace GenericFindMaxTestCase
             float result = findMaxNumber.FindMaxValue_Float(5.4F, 30.0F, 30.8F);
             Assert.AreEqual(30.8F, result);
         }
-        
+        /// <summary>
+        /// UC3.1 Find max string given First String and return It
+        /// </summary>
+        [TestMethod]
+        public void GivenMaxFirstStringValue_WhenAnalysed_ShouldReturnFirstMax()
+        {
+            string result = findMaxNumber.FindMaxStringValue("Peach", "Apple", "Banana");
+            Assert.AreEqual("Peach", result);
+        }
     }
 }
