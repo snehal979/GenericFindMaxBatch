@@ -30,7 +30,28 @@ namespace GenericFindMax
             {
                 return num3;
             }
+        }/// <summary>
+        /// Uc 2 Find Max Number Float
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="num3"></param>
+        /// <returns></returns>
+        public float FindMaxValue_Float(float num1, float num2, float num3)
+        {
+            if (num1>num2 && num1>num3)
+            {
+                return num1;
 
+            }
+            else if (num2>num3 && num2>num3)
+            {
+                return num2;
+            }
+            else
+            {
+                return num3;
+            }
         }
     }
 }
