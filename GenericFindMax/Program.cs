@@ -1,4 +1,7 @@
-﻿namespace GenericFindMax
+﻿using System.IO;
+using System;
+
+namespace GenericFindMax
 {
     class Program
     {
@@ -8,7 +11,7 @@
             FindMaxNumber findMaxNumber = new FindMaxNumber();
             try
             {
-                Console.WriteLine("Hint 1.FindMax Interger 2.FindMax Float");
+                Console.WriteLine("Hint 1.FindMax Interger 2.FindMax Float 3.FindMax String");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -25,6 +28,9 @@
                         float flonum2 = float.Parse(Console.ReadLine());
                         float flonum3 = float.Parse(Console.ReadLine());
                         Console.WriteLine("Max number is :"+findMaxNumber.FindMaxValue_Float(flonum1, flonum2, flonum3));
+                        break;
+                    case 3:
+                        Console.WriteLine("Maximum string is :"+findMaxNumber.FindMaxStringValue("Apple","Peach","Bananan"));
                         break;
                 }
             }

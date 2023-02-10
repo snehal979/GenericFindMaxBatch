@@ -65,5 +65,6 @@ namespace GenericFindMaxTestCase
             float result = findMaxNumber.FindMaxValue_Float(5.4F, 30.0F, 30.8F);
             Assert.AreEqual(30.8F, result);
         }
+        
     }
 }
