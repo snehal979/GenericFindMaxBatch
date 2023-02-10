@@ -12,7 +12,6 @@ namespace GenericFindMaxTestCase
         [TestMethod]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFistMaxNum()
         {
-          
             //AAA
             //arrage initializatiion of vaiables
             int result = findMaxNumber.FindMaxValue_Int(30, 2, 5);
@@ -38,6 +37,8 @@ namespace GenericFindMaxTestCase
             int result = findMaxNumber.FindMaxValue_Int(3, 5, 30);
             Assert.AreEqual(30, result);
         }
+        
+
         /// <summary>
         /// Uc2.1 Given First Max Value and return First test case
         /// </summary>
@@ -65,6 +66,8 @@ namespace GenericFindMaxTestCase
             float result = findMaxNumber.FindMaxValue_Float(5.4F, 30.0F, 30.8F);
             Assert.AreEqual(30.8F, result);
         }
+
+
         /// <summary>
         /// UC3.1 Find max string given First String and return It
         /// </summary>
@@ -91,6 +94,44 @@ namespace GenericFindMaxTestCase
         {
             string result = findMaxNumber.FindMaxStringValue("Apple", "Banana", "Peach");
             Assert.AreEqual("Peach", result);
+        }
+
+
+        /// <summary>
+        /// Uc4 Generic Method 
+        /// </summary>
+        [TestMethod]
+        public void MethodGivenNumber_WhenAnalyse_ShouldReturnMaxValue()
+        {
+            FindMaxGenericMethod genericMethod = new FindMaxGenericMethod();
+
+            int resultInterger = genericMethod.FindMaxMethod(30, 2, 5);
+            float resultFloat = genericMethod.FindMaxMethod(30.6F, 5.4F, 6.7F);
+            string resultString = genericMethod.FindMaxMethod("Apple", "Banana", "Peach");
+
+            Assert.AreEqual(30, resultInterger);
+            Assert.AreEqual(30.6F, resultFloat);
+            Assert.AreEqual("Peach", resultString);
+        }
+
+
+        /// <summary>
+        /// Uc5 Generic Class
+        /// </summary>
+        [TestMethod]
+        public void ClassGivenNumber_WhenAnalyse_ShouldReturnMaxValue()
+        {
+            FindMaxGenericClass<int> genericClassInt = new FindMaxGenericClass<int>(30, 2, 5);
+            int result1 = genericClassInt.FindMaxValue();
+            Assert.AreEqual(30, result1);
+
+            FindMaxGenericClass<float> genericClassFloat = new FindMaxGenericClass<float>(30.6F, 5.4F, 6.7F);
+            float result2 = genericClassFloat.FindMaxValue();
+            Assert.AreEqual(30.6F, result2);
+
+            FindMaxGenericClass<string> genericClassString = new FindMaxGenericClass<string>("Apple", "Banana", "Peach");
+            string result3 = genericClassString.FindMaxValue();
+            Assert.AreEqual("Peach", result3);
         }
     }
 }
