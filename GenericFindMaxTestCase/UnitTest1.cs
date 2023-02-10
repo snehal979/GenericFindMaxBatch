@@ -39,12 +39,21 @@ namespace GenericFindMaxTestCase
             Assert.AreEqual(30, result);
         }
         /// <summary>
-        /// Uc2.1 Given Third Max Value and return Third test case
+        /// Uc2.1 Given First Max Value and return First test case
         /// </summary>
         [TestMethod]
-        public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMaxNum_FloatNumber()
+        public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMaxNum_FloatNumber()
         {
             float result = findMaxNumber.FindMaxValue_Float(30.8F, 5.4F, 30.0F);
+            Assert.AreEqual(30.8F, result);
+        }
+        /// <summary>
+        /// Uc2.2 Given Second Max Value and return Second test case
+        /// </summary>
+        [TestMethod]
+        public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMaxNum_FloatNumber()
+        {
+            float result = findMaxNumber.FindMaxValue_Float(5.4F, 30.84F, 30.0F);
             Assert.AreEqual(30.8F, result);
         }
     }
