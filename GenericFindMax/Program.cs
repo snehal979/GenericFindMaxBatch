@@ -32,6 +32,13 @@ namespace GenericFindMax
                     case 3:
                         Console.WriteLine("Maximum string is :"+findMaxNumber.FindMaxStringValue("Apple","Peach","Bananan"));
                         break;
+                    case 4:
+                        FindMaxGenericMethod genericMethodPro = new FindMaxGenericMethod();
+                        int resultInterger = genericMethodPro.FindMaxMethod(30, 2, 5);
+                        float resultFloat = genericMethodPro.FindMaxMethod(30.6F, 5.4F, 6.7F);
+                        string resultString = genericMethodPro.FindMaxMethod("Apple", "Banana", "Peach");
+                        Console.WriteLine("Maximum Number is :"+resultInterger+"\n Max Float number is :"+resultFloat+"\nMax string is :"+resultString);
+                        break;
                 }
             }
             catch(Exception ex)
