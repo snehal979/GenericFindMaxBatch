@@ -38,5 +38,14 @@ namespace GenericFindMaxTestCase
             int result = findMaxNumber.FindMaxValue_Int(3, 5, 30);
             Assert.AreEqual(30, result);
         }
+        /// <summary>
+        /// Uc2.1 Given Third Max Value and return Third test case
+        /// </summary>
+        [TestMethod]
+        public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMaxNum_FloatNumber()
+        {
+            float result = findMaxNumber.FindMaxValue_Float(30.8F, 5.4F, 30.0F);
+            Assert.AreEqual(30.8F, result);
+        }
     }
 }
