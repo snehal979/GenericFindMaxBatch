@@ -83,5 +83,14 @@ namespace GenericFindMaxTestCase
             string result = findMaxNumber.FindMaxStringValue( "Apple", "Peach", "Banana");
             Assert.AreEqual("Peach", result);
         }
+        /// <summary>
+        /// UC3.3 Find max string given Third String and return It
+        /// </summary>
+        [TestMethod]
+        public void GivenMaxThirdStringValue_WhenAnalysed_ShouldReturnThirdMax()
+        {
+            string result = findMaxNumber.FindMaxStringValue("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", result);
+        }
     }
 }
